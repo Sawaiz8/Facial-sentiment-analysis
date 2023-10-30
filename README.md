@@ -36,9 +36,9 @@
 
 ### Built With
 
-* [[Tensorflow]][tensorflow-url]
-* [[Deepface]][deepface-url]
-* [[Yolo]][yolo-url]
+* [Tensorflow][tensorflow-url]
+* [Deepface][deepface-url]
+* [Yolo][yolo-url]
 
 NOTE: the notebooks folder is just the notebooks created during the experimentation process with different model settings.
 
