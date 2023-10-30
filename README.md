@@ -100,4 +100,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [tensorflow-url]: https://www.tensorflow.org/
 [deepface-url]: https://github.com/serengil/deepface
-[yolo-url]: https://www.ultralytics.com/# Real-time-Facial-sentiment-and-verification-
+[yolo-url]: https://www.ultralytics.com/
