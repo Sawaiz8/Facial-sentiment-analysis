@@ -120,7 +120,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--video_path', type=str, help="video path")
     parser.add_argument('--output_path', type=str, help="output video path")
-    parser.add_argument('--show_video_only', type=int, help="0 or 1", default=0)
+    parser.add_argument('--show_video_only', type=int, help="0 or 1", default=1)
     args = parser.parse_args()
 
     #Intiaize the class and process the video

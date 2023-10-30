@@ -85,9 +85,12 @@ Then you would install the libraries in the requirements.txt file using the folo
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+--video_path: send the video path as argument
+--output_path: send the output folder path
+--show_video: if set to 1 then it will show the processed video stream. if set to 0 it will save the stream into the video file. default value is 1
 Run the following command: 
 ```sh
-  python3 main.py
+  python3 main.py --video_path experimentation_videos/videoplayback.mp4 --output_path model_output --show_video_only 0
    ```
 
 <!-- LICENSE -->
