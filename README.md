@@ -63,7 +63,7 @@ Then you would install the libraries in the requirements.txt file using the folo
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-**--video_path:** send the video path as argument
+**--video_path:** send the video path as argument \\
 
 **--output_path:** send the output folder path
 
@@ -75,7 +75,6 @@ Run the following command:
 
 <!-- LICENSE -->
 ## License
-
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 

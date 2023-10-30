@@ -10,14 +10,17 @@ class VideoAnalyzer:
 
     def __init__(self):
         self.senti_model = Emotion.loadModel()
+        print("Initialized Facial Sentiment analysis model")
         self.labels = ["angry", "disgust", "fear", "happy", "sad", "surprise", "neutral"]
         self.colors = self.gen_colors_based_on_id()
         self.yolo_model = YOLO('models/yolo_basic/yolov8n.pt')
+        print("Initialized YOLO model")
 
     def gen_colors_based_on_id(self):
         """
         Generates random colors for each indivual
         """
+        #check a random dictionary of colors
         colors = dict()
         for i in range(1,50):
             colors["id " + str(i)] = (randint(0,255), randint(0,255), randint(0,255))
@@ -54,7 +57,10 @@ class VideoAnalyzer:
             r = int((x + w / 2))
             t = int((y - h / 2))
             b = int((y + h / 2))
+            
+            #Crop the person's face
             cropped_image = image[t:b, l:r]
+
             #Get sentiment
             emotion = self.sentiment_analysis(cropped_image)
 
@@ -120,7 +126,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--video_path', type=str, help="video path")
     parser.add_argument('--output_path', type=str, help="output video path")
-    parser.add_argument('--show_video_only', type=int, help="0 or 1", default=1)
+    parser.add_argument('--show_video_only', type=int, help="0 or 1", default=0)
     args = parser.parse_args()
 
     #Intiaize the class and process the video
