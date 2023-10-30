@@ -61,8 +61,7 @@
 * [[Deepface]][deepface-url]
 * [[Yolo]][yolo-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+NOTE: the notebooks folder is just the notebooks created during the experimentation process with different model settings.
 
 <!-- GETTING STARTED -->
 ## Installation
