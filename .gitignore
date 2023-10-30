@@ -9,7 +9,6 @@ __pycache__/
 #Dataset
 experimentation_images/
 experimentation_videos/
-database/
 
 #Model files
 home/sawaiz/Documents/Lab/In Progress/Video face detection/notebooks/yolov8n-seg.pt
